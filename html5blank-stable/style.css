@@ -1,0 +1,200 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+
+/*------------------------------------*\
+    GENERAL
+\*------------------------------------*/
+
+body
+{
+    background-color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container
+{
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 50px 50px 100px;
+}
+
+
+/*------------------------------------*\
+    TITRES
+\*------------------------------------*/
+
+h1
+{
+    color: #3b3bb6;
+    margin-bottom: 30px;
+}
+
+h2
+{
+    color: #3b3bb6;
+    font-size: 1.5em;
+    margin: 30px 0px;
+}
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+.imageBienvenue
+{
+    background-image: url(img/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+}
+
+/*------------------------------------*\
+    INPUT
+\*------------------------------------*/
+
+.nouvelleTache input
+{
+    height: 30px;
+    outline: none;
+    width: 75%;
+}
+
+input[type=checkbox]:checked+.texteTache
+{
+    text-decoration: line-through #3b3bb6;
+}
+
+/*------------------------------------*\
+    CHECKBOX
+\*------------------------------------*/
+
+.checkbox
+{
+    margin: 6px 20px;
+    
+}
+
+/*------------------------------------*\
+    TEMPLATES
+\*------------------------------------*/
+
+#template-alert
+{
+    display: none;
+}
+
+
+/*------------------------------------*\
+    BOUTONS
+\*------------------------------------*/
+
+button
+{
+    background-color: #23236e;
+    border: none;
+    color: white;
+}
+
+#btn-nouvelleTache
+{
+    border-radius: 0px 5px 5px 0px;   
+    height: 30px;
+}
+
+button.btn-enregistrerTache:disabled, button.btn-modifierTache:disabled, button.btn-supprimerTache:disabled, #btn-nouvelleTache:disabled
+{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button.btn-supprimerTache, button.btn-enregistrerTache, button.btn-modifierTache
+{
+    border-radius: 5px;
+    height: 30px;
+    margin-right: 10px;
+    padding: auto;
+    width: 30px;
+}
+
+button:active, button:hover
+{
+    background-color: rgb(192, 45, 131);
+}
+
+.close:hover
+{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.modifierTache
+{
+    width: 80%;
+}
+
+
+/*------------------------------------*\
+    NOUVELLE TÂCHE
+\*------------------------------------*/
+
+.nouvelleTache
+{
+    margin: 75px auto;
+}
+
+
+
+
+
+/*------------------------------------*\
+    LISTE TÂCHES
+\*------------------------------------*/
+
+li
+{
+    display: none;
+}
+
+.texteTache
+{
+    display: inline-block;
+}
+
+.tache
+{
+    padding: 10px 0px;
+}
+
+hr
+{
+    background-color: black;
+}
+
+
+/*------------------------------------*\
+    MEDIA QUERIES
+\*------------------------------------*/
+
+@media (max-width: 767px)
+{
+    body
+    {
+        padding: 50px 5px;
+    }
+}
